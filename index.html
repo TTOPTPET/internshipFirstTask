@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>intershipFirstTask</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -15,10 +14,10 @@
                     <div class="header__title">Социальные сети</div>
                     <div class="header__subtitle">Делитесь постами из соцсетей</div>
                 </div>
-                <button class="header__button">
-                    <img class="header__button__logo-test" src="icons/add-circle-outline.svg"></img>
+                <a href="pages/createPost.html" class="header__button">
+                    <img class="header__button__icon" alt="button icon" src="icons/add-circle-outline.svg">
                     Добавить
-                </button>
+                </a>
             </div>
             <div class="header__tabs">
                 <div class="header__tab header__tab_active">Instagram</div>
@@ -45,7 +44,9 @@
                 </td>
                 <td class="table__item__published">
                     <div class="table__item__published__wrapper">
-                        <div class="table__item__published__status-icon"></div>
+                        <div class="table__item__published__status-icon">
+                            <span class="tooltip">Опубликовано</span>
+                        </div>
                         <div class="table__item__descr">
                             <div class="table__item__descr__title">altenar</div>
                             <div class="table__item__descr__subtitle">25/02/2022</div>
@@ -55,7 +56,7 @@
                 <td class="table__item__link">
                     <div class="table__item__link__wrapper">
                         <button class="table__item__link__icon"></button>
-                        <button class="table__item__link__icon table__item__link__icon_more" onclick="myFunction(1)" id="dropdownButton1"></button>
+                        <button class="table__item__link__icon table__item__link__icon_more" onclick="onDropdown(1)" id="dropdownButton1"></button>
                     </div>
                     <div id="dropdownMenu1" class="dropdown">
                         <div class="dropdown__item">Опубликовать</div>
@@ -75,7 +76,9 @@
                 </td>
                 <td class="table__item__published">
                     <div class="table__item__published__wrapper">
-                        <div class="table__item__published__status-icon table__item__published__status-icon_notpublished"></div>
+                        <div class="table__item__published__status-icon table__item__published__status-icon_notpublished">
+                            <span class="tooltip">Неопубликовано</span>
+                        </div>
                         <div class="table__item__descr">
                             <div class="table__item__descr__title">altenar</div>
                             <div class="table__item__descr__subtitle">25/02/2022</div>
@@ -85,7 +88,7 @@
                 <td class="table__item__link">
                     <div class="table__item__link__wrapper">
                         <button class="table__item__link__icon" disabled></button>
-                        <button class="table__item__link__icon table__item__link__icon_more" onclick="myFunction(2)" id="dropdownButton2" disabled></button>
+                        <button class="table__item__link__icon table__item__link__icon_more" onclick="onDropdown(2)" id="dropdownButton2" disabled></button>
                     </div>
                     <div id="dropdownMenu2" class="dropdown">
                         <div class="dropdown__item">Опубликовать</div>
@@ -105,7 +108,9 @@
                 </td>
                 <td class="table__item__published">
                     <div class="table__item__published__wrapper">
-                        <div class="table__item__published__status-icon table__item__published__status-icon_loading"></div>
+                        <div class="table__item__published__status-icon table__item__published__status-icon_loading">
+                            <span class="tooltip">Загружается</span>
+                        </div>
                         <div class="table__item__descr">
                             <div class="table__item__descr__title">altenar</div>
                             <div class="table__item__descr__subtitle">25/02/2022</div>
@@ -115,7 +120,7 @@
                 <td class="table__item__link">
                     <div class="table__item__link__wrapper">
                         <button class="table__item__link__icon"></button>
-                        <button class="table__item__link__icon table__item__link__icon_more" onclick="myFunction(3)" id="dropdownButton3"></button>
+                        <button class="table__item__link__icon table__item__link__icon_more" onclick="onDropdown(3)" id="dropdownButton3"></button>
                     </div>
                     <div id="dropdownMenu3" class="dropdown">
                         <div class="dropdown__item">Опубликовать</div>
@@ -135,7 +140,9 @@
                 </td>
                 <td class="table__item__published">
                     <div class="table__item__published__wrapper">
-                        <div class="table__item__published__status-icon table__item__published__status-icon_notpublished"></div>
+                        <div class="table__item__published__status-icon table__item__published__status-icon_notpublished">
+                            <span class="tooltip">Неопубликовано</span>
+                        </div>
                         <div class="table__item__descr">
                             <div class="table__item__descr__title">altenar</div>
                             <div class="table__item__descr__subtitle">25/02/2022</div>
@@ -145,7 +152,7 @@
                 <td class="table__item__link">
                     <div class="table__item__link__wrapper">
                         <button class="table__item__link__icon"></button>
-                        <button class="table__item__link__icon table__item__link__icon_more" onclick="myFunction(4)" id="dropdownButton4"></button>
+                        <button class="table__item__link__icon table__item__link__icon_more" onclick="onDropdown(4)" id="dropdownButton4"></button>
                     </div>
                     <div id="dropdownMenu4" class="dropdown">
                         <div class="dropdown__item">Опубликовать</div>
@@ -165,7 +172,9 @@
                 </td>
                 <td class="table__item__published">
                     <div class="table__item__published__wrapper">
-                        <div class="table__item__published__status-icon"></div>
+                        <div class="table__item__published__status-icon">
+                            <span class="tooltip">Опубликовано</span>
+                        </div>
                         <div class="table__item__descr">
                             <div class="table__item__descr__title">altenar</div>
                             <div class="table__item__descr__subtitle">25/02/2022</div>
@@ -175,7 +184,7 @@
                 <td class="table__item__link">
                     <div class="table__item__link__wrapper">
                         <button class="table__item__link__icon"></button>
-                        <button class="table__item__link__icon table__item__link__icon_more" onclick="myFunction(5)" id="dropdownButton5"></button>
+                        <button class="table__item__link__icon table__item__link__icon_more" onclick="onDropdown(5)" id="dropdownButton5"></button>
                     </div>
                     <div id="dropdownMenu5" class="dropdown">
                         <div class="dropdown__item">Опубликовать</div>
@@ -195,7 +204,9 @@
                 </td>
                 <td class="table__item__published">
                     <div class="table__item__published__wrapper">
-                        <div class="table__item__published__status-icon"></div>
+                        <div class="table__item__published__status-icon">
+                            <span class="tooltip">Опубликовано</span>
+                        </div>
                         <div class="table__item__descr">
                             <div class="table__item__descr__title">altenar</div>
                             <div class="table__item__descr__subtitle">25/02/2022</div>
@@ -205,7 +216,7 @@
                 <td class="table__item__link">
                     <div class="table__item__link__wrapper">
                         <button class="table__item__link__icon"></button>
-                        <button class="table__item__link__icon table__item__link__icon_more" onclick="myFunction(6)" id="dropdownButton6"></button>
+                        <button class="table__item__link__icon table__item__link__icon_more" onclick="onDropdown(6)" id="dropdownButton6"></button>
                     </div>
                     <div id="dropdownMenu6" class="dropdown">
                         <div class="dropdown__item">Опубликовать</div>
