@@ -9,73 +9,204 @@
 <body>
     <div class="create-post">
 
+        <div class="create-post__background"></div>
+
+        <div class="create-post__post-area"></div>
+
         <div class="container container_create-post">
 
             <div class="create-post__back">
-                <div class="container container_create-post">
-                    <a href="../" class="create-post__back__link">
-                        <img src="../icons/arrow-left.svg" alt="arrow" class="create-post__back__icon">
-                        <div class="create-post__back__text">Вернуться к списку</div>
-                    </a>
+                <a href="../" class="create-post__back__link">
+                    <img src="../icons/arrow-left.svg" alt="arrow" class="create-post__back__icon">
+                    <div class="create-post__back__text">Вернуться к списку</div>
+                </a>
+            </div>
+
+            <div class="create-post__subheader">
+            
+                <div class="create-post__item__title create-post__item__title_subheader">Создайте подборку</div>
+                <div class="create-post__item__subtitle">Перед началом ознакомьтесь с <a href="" class="create-post__subheader__link">гайдлайнами</a>, где<br> вы найдете примеры правильного оформления</div>
+            
+            </div>
+    
+            <div class="create-post__item create-post__item_descr">
+
+                <div class="create-post__item__text">
+
+                    <div class="create-post__item__title">Расскажите о подборке</div>
+                    <div class="create-post__item__subtitle">Желательно сделать это кратко и ёмко</div>
+                
                 </div>
+
+                <form action="#" class="create-post__item_descr__form">
+                    <div class="create-post__item_descr__form__input-with-text">
+                        <input type="text" class="create-post__item_descr__form__input" placeholder="Дискриптор">
+                        <span class="inputText" aria-hidden="true">30</span>
+                    </div>
+
+                    <div class="create-post__item_descr__form__input-with-text">
+                        <input type="text" class="create-post__item_descr__form__input create-post__item_descr__form__input_error" placeholder="Название">
+                        <div class="create-post__item_descr__form__input__error-msg">Название превышает 50 знаков</div>
+                        <span class="inputText" aria-hidden="true">50</span>
+                    </div>
+                    
+                    <textarea class="create-post__item_descr__form__input create-post__item_descr__form__input_textarea" placeholder="Описание"></textarea>
+
+                </form>
+
             </div>
 
-            <div class="create-post__head__wrapper create-post__head__wrapper_1" >
+            <div class="create-post__line"></div>
                 
-                <div class="create-post__head__title">Создайте подборку</div>
-                <div class="create-post__head__subtitle">Перед началом ознакомьтесь с <span class="create-post__head__subtitle_span">гайдлайнами</span>, где<br> вы найдете примеры правильного оформления</div>
-            
+            <div class="create-post__item create-post__item_upload">
+
+                <div class="create-post__item__title">Загрузите обложку</div>
+
+                <div class="create-post__item_upload__file-input">
+                    <img src="../icons/File.svg" alt="file" class="create-post__item_upload__file-input__icon">
+                    <div class="create-post__item_upload__file-input__text-wrapper">
+                        <span class="create-post__item_upload__file-input__title">Перетащите файл или <span class="create-post__item_upload__file-input__title create-post__item_upload__file-input__title_blue">загрузите с компьютера</span></span>
+                        <span class="create-post__item_upload__file-input__subtitle">Соотношение 1:1. Минимальный размер 1242х1242 px</span>
+                    </div>
+                    <input class="create-post__item_upload__file-input__input" type="file" multiple>
+                </div>
+                
+                <div class="create-post__item_upload__file-input create-post__item_upload__file-input_active">
+                    <img src="../icons/File.svg" alt="file" class="create-post__item_upload__file-input__icon">
+                    <div class="create-post__item_upload__file-input__text-wrapper">
+                        <span class="create-post__item_upload__file-input__title">Перетащите файл или <span class="create-post__item_upload__file-input__title create-post__item_upload__file-input__title_blue">загрузите с компьютера</span></span>
+                        <span class="create-post__item_upload__file-input__subtitle">Соотношение 1:1. Минимальный размер 1242х1242 px</span>
+                    </div>
+                    <input class="create-post__item_upload__file-input__input" type="file" multiple>
+                </div>
+
+                <div class="create-post__item_upload__file-input create-post__item_upload__file-input_error">
+                    <img src="../icons/File.svg" alt="file" class="create-post__item_upload__file-input__icon">
+                    <div class="create-post__item_upload__file-input__text-wrapper">
+                        <span class="create-post__item_upload__file-input__title">Перетащите файл или <span class="create-post__item_upload__file-input__title create-post__item_upload__file-input__title_blue">загрузите с компьютера</span></span>
+                        <span class="create-post__item_upload__file-input__subtitle">Соотношение 1:1. Минимальный размер 1242х1242 px</span>
+                    </div>
+                    <input class="create-post__item_upload__file-input__input" type="file" multiple>
+                </div>
+                <div class="create-post__item_upload__file-input__error-msg">Слишком маленький размер изображения</div>
+
+                <div class="create-post__item_upload__file-input create-post__item_upload__file-input_loading">
+                    <img src="../img/onion-mini-blur.png" alt="userImage" class="create-post__item_upload__file-input__image">
+                    <div class="create-post__item_upload__file-input__text-wrapper">
+                        <span class="create-post__item_upload__file-input__title">Onion</span>
+                        <span class="create-post__item_upload__file-input__subtitle">Размер: 1300х1300 px</span>
+                    </div>
+                    <input class="create-post__item_upload__file-input__input" type="file" multiple>
+                    <img src="../icons/close.svg" alt="close" class="create-post__item_upload__file-input__cancel">
+                    <progress max="100" value="30" class="create-post__item_upload__file-input__progress"></progress>
+                </div>
+
+                <div class="create-post__item_upload__file-input create-post__item_upload__file-input_file">
+                    <img src="../img/onion-mini.png" alt="userImage" class="create-post__item_upload__file-input__image">
+                    <div class="create-post__item_upload__file-input__text-wrapper">
+                        <span class="create-post__item_upload__file-input__title">Onion</span>
+                        <span class="create-post__item_upload__file-input__subtitle">Размер: 1300х1300 px</span>
+                    </div>
+                    <input class="create-post__item_upload__file-input__input" type="file" multiple>
+                    <img src="../icons/close.svg" alt="close" class="create-post__item_upload__file-input__cancel">
+                </div>
+
             </div>
 
-            <div class="create-post__head__wrapper create-post__head__wrapper_1" >
+            <div class="create-post__line"></div>
+
+            <div class="create-post__item create-post__item_colorpicker">
+
+                <div class="create-post__item__text">
+
+                    <div class="create-post__item__title">Выберите цвет</div>
+                    <div class="create-post__item__subtitle">Лучше всего подойдет цвет преобладающий на обложке</div>
                 
-                <div class="create-post__head__title">Создайте подборку</div>
-                <div class="create-post__head__subtitle">Перед началом ознакомьтесь с <span class="create-post__head__subtitle_span">гайдлайнами</span>, где<br> вы найдете примеры правильного оформления</div>
-            
+                </div>
+
+
+                <div class="create-post__item_colorpicker__container">
+
+                    <div class="create-post__item_colorpicker__wrapper">
+                        <img src="../icons/withoutColor.svg" alt="png" class="create-post__item_colorpicker__img">
+                        <input type="color" class="create-post__item_colorpicker__input">
+                        <span class="create-post__item_colorpicker__tooltip">Выберите цвет</span>
+                    </div>
+
+                        
+                        
+                    <div class="create-post__item_colorpicker__wrapper-second">
+                        <input type="color" value="#9197A3" class="create-post__item_colorpicker__input-second">
+                        <span class="create-post__item_colorpicker__tooltip create-post__item_colorpicker__tooltip_second">#9197A3</span>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="create-post__head__wrapper create-post__head__wrapper_1" >
+            <div class="create-post__line"></div>
+
+            <div class="create-post__item create-post__item_switch">
+
+                <div class="create-post__item__text">
+
+                    <div class="create-post__item__title">Проверьте читабельность</div>
+                    <div class="create-post__item__subtitle">Выберите цвет интерфейса, который будет контрастнее смотреться на выбранном ранее фоне</div>
                 
-                <div class="create-post__head__title">Создайте подборку</div>
-                <div class="create-post__head__subtitle">Перед началом ознакомьтесь с <span class="create-post__head__subtitle_span">гайдлайнами</span>, где<br> вы найдете примеры правильного оформления</div>
-            
+                </div>
+
+                <div class="create-post__item_switch__wrapper">
+
+                    <div class="create-post__item_switch__text create-post__item_switch__text_active">Темный</div>
+
+                    <div onclick="onSwitch()" id="switch" class="create-post__item_switch__btn"></div>
+
+                    <div class="create-post__item_switch__text">Светлый</div>
+
+                </div>
+
             </div>
 
-            <div class="create-post__head__wrapper create-post__head__wrapper_1" >
+            <div class="create-post__line"></div>
+
+            <div class="create-post__item create-post__item_link">
+
+                <div class="create-post__item__text">
+
+                    <div class="create-post__item__title">Оставьте ссылку</div>
+                    <div class="create-post__item__subtitle">Лучше всего ссылаться на каталог вашего магазина или промо-страницу</div>
                 
-                <div class="create-post__head__title">Создайте подборку</div>
-                <div class="create-post__head__subtitle">Перед началом ознакомьтесь с <span class="create-post__head__subtitle_span">гайдлайнами</span>, где<br> вы найдете примеры правильного оформления</div>
-            
+                </div>
+
+                <form action="#" class="create-post__item_link__form">
+
+                    <div class="create-post__item_descr__form__input-with-text">
+                        <input type="text" class="create-post__item_descr__form__input" placeholder="Название">
+                        <span class="inputText" aria-hidden="true">30</span>
+                    </div>
+
+                    <div class="create-post__item_descr__form__input-with-text">
+
+                        <span class="inputIcon" aria-hidden="true"></span>
+                        <input type="url" class="create-post__item_descr__form__input" placeholder="Ссылка">
+                        <span class="inputText" aria-hidden="true">50</span>
+                    </div>
+
+                </form>
+
+                <div class="create-post__item_link__footer">
+
+                    <button class="create-post__item_link__footer__button">Создать</button>
+                    <div class="create-post__item_link__footer__text">Подборка не будет опубликована. Вы сможете добавить продукты и внести правки</div>
+
+                </div>
+
             </div>
 
-            <div class="create-post__head__wrapper create-post__head__wrapper_1" >
-                
-                <div class="create-post__head__title">Создайте подборку</div>
-                <div class="create-post__head__subtitle">Перед началом ознакомьтесь с <span class="create-post__head__subtitle_span">гайдлайнами</span>, где<br> вы найдете примеры правильного оформления</div>
-            
-            </div>
-
-            <div class="create-post__head__wrapper create-post__head__wrapper_1" >
-                
-                <div class="create-post__head__title">Создайте подборку</div>
-                <div class="create-post__head__subtitle">Перед началом ознакомьтесь с <span class="create-post__head__subtitle_span">гайдлайнами</span>, где<br> вы найдете примеры правильного оформления</div>
-            
-            </div>
-
-            <div class="create-post__head__wrapper create-post__head__wrapper_1" >
-                
-                <div class="create-post__head__title">Создайте подборку</div>
-                <div class="create-post__head__subtitle">Перед началом ознакомьтесь с <span class="create-post__head__subtitle_span">гайдлайнами</span>, где<br> вы найдете примеры правильного оформления</div>
-            
-            </div>
-                
-
-        </div>
-
-        <div class="create-post__post-area"></div>
-        
-        
+        </div>        
 
     </div>
+
+    <script src="../js/script.js"></script>
+
 </body>
 </html>
