@@ -1,0 +1,74 @@
+.colorpicker
+    &__container
+        margin-top: 32px
+        display: flex
+        gap: 30px
+    &__wrapper
+        position: relative
+        display: flex
+        align-items: center
+        width: 46px
+        height: 46px
+        padding: 2px
+        border-radius: 50%
+        border: 1px solid rgba(196, 196, 196, 0)
+        transition: all 0.2s
+        &:hover
+            border: 1px solid rgba(196, 196, 196, 1)
+            .colorpicker__tooltip
+                visibility: visible
+    &__input
+        position: absolute
+        left: 2px
+        top: 2px
+        height: 40px
+        width: 40px
+        cursor: pointer
+        opacity: 0
+    &__wrapper-second
+        position: relative
+        &:hover .colorpicker__tooltip
+            visibility: visible
+    &__input-second
+        position: relative
+        width: 46px
+        height: 46px
+        border-radius: 50%
+        padding: 0
+        background-color: transparent
+        border: 1px solid rgba(196, 196, 196, 0)
+        transition: all 0.2s
+        cursor: pointer
+        &:hover
+            border: 1px solid rgba(196, 196, 196, 1)
+        &:focus
+            border: 1px solid rgba(33, 150, 243, 1)
+        &::-webkit-color-swatch
+            position: absolute
+            top: 2px
+            left: 2px
+            border: none
+            border-radius: 50%
+            height: 40px
+            width: 40px
+    &__tooltip
+        width: 90px
+        margin-top: 6px
+        visibility: hidden
+        color: #fff
+        text-align: center
+        padding: 4px 8px
+        border-radius: 4px
+        position: absolute
+        z-index: 1
+        top: 100%
+        left: 50%
+        margin-left: -22px
+        background-color: rgba(97, 97, 97, 0.9)
+        font-size: 10px
+        font-weight: 500
+        line-height: 14px
+        &_second
+            width: 60px
+            margin-top: 0
+            margin-left: -28px
