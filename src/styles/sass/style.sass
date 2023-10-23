@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap')
+
+.container
+    max-width: 85%
+    padding: 0 0 0 15%
+    height: 100%
+    position: relative
+    &_create-post
+        position: relative
+        max-height: calc(100vh - 40px)
+        max-width: calc(40% + 7px)
+        overflow-y: auto
+        margin-top: 24px
+        &::-webkit-scrollbar
+            width: 4px
+        &::-webkit-scrollbar-thumb
+            border-radius: 4px
+            background-color: #BDBDBD
+        &::-webkit-scrollbar-track
+            display: none
+
+@import 'variables/_variables'
+@import 'blocks/_header'
+@import 'blocks/_table'
+@import 'blocks/_create-post'
+@import 'blocks/_post-area'
+@import 'blocks/_back-button'
+@import 'blocks/_text'
+@import 'blocks/_subheader'
+@import 'blocks/_form'
+@import 'blocks/_form'
+@import 'blocks/_file-input'
+@import 'blocks/_colorpicker'
+@import 'blocks/_switch'
+@import 'blocks/_add-link'
