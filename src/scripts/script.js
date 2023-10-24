@@ -5,7 +5,7 @@ function onDropdown(id) {
 
 function onSwitch() {
 
-  document.getElementById(`switch`).classList.toggle("switch__btn_on");
+  document.getElementById(`switch`).classList.toggle("switch__button_on");
   const text = document.getElementsByClassName('switch__text');
   for (let i = 0; i < text.length; i++) {
     text[i].classList.toggle('switch__text_active')
